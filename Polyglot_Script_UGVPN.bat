@@ -28,6 +28,6 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------    
 
-@powershell -noprofile -executionpolicy remotesigned -command Add-VpnConnection -Name 'UserGate backup 2nd test' -ServerAddress '192.168.3.166' -TunnelType L2tp -L2tpPsk 'Arinteg123!' -EncryptionLevel Optional -AuthenticationMethod Pap -RememberCredential -AllUserConnection -SplitTunneling $True -Force  -PassThru
+@powershell -noprofile -executionpolicy remotesigned -command Add-VpnConnection -Name 'UserGate backup 2nd test' -ServerAddress '192.168.1.1' -TunnelType L2tp -L2tpPsk 'P@ssw0rd' -EncryptionLevel Optional -AuthenticationMethod Pap -RememberCredential -AllUserConnection -SplitTunneling $True -Force  -PassThru
 
 
